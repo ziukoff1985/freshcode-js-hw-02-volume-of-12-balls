@@ -17,5 +17,5 @@ for (let i = 1; i <= 12; i++) {
 }
 
 console.log(
-    `Суммарный внутренний объем 12-ти шаров равен ${totalVolume.toFixed(2)} м3`
+    `The total internal volume of the 12 balls is ${totalVolume.toFixed(2)} m3`
 );
