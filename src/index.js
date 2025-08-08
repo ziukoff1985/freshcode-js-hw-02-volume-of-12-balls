@@ -2,14 +2,14 @@
 
 let totalVolume = 0;
 
+const smallBallDiameter = 0.5;
+
 const wallThickness = 0.01;
 
-const pi = Math.PI;
-
-let currentInternalRadius = 0.24;
+let currentInternalRadius = smallBallDiameter / 2 - wallThickness;
 
 for (let i = 1; i <= 12; i++) {
-    const currentVolume = (4 / 3) * pi * currentInternalRadius ** 3;
+    const currentVolume = (4 / 3) * Math.PI * currentInternalRadius ** 3;
 
     totalVolume += currentVolume;
 
@@ -17,5 +17,5 @@ for (let i = 1; i <= 12; i++) {
 }
 
 console.log(
-    `The total internal volume of the 12 balls is ${totalVolume.toFixed(2)} m3`
+    `The total internal volume of the 12 balls is ${totalVolume.toFixed(2)} m³`
 );
